@@ -1,0 +1,70 @@
+
+.boxes {
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 36vh;
+}
+
+
+.box1, .box2, .box3, .box4 {
+    display: flex;
+    background: #ffffff; 
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    height:80px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.stars {
+    display: flex;
+    justify-content: center;
+    color: gold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
+h1 {
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #333;
+   
+    margin-bottom: 10px;
+}
+
+
+p {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+}
+
+.booking{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: orange;
+}
+.booking:hover{
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+
+    background-color: red;
+    cursor: pointer;
+   transition: 0.15s ease;
+}

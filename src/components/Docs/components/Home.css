@@ -1,0 +1,171 @@
+
+body{
+   /* background: linear-gradient(to right,#2c003e, #0044cc);
+  */
+  background-color: black;
+  margin: 0px;
+    padding: 0px;
+}
+img{
+   height:80px;
+   width:80px;
+   background:transparent;
+box-sizing: border-box;
+border-radius: 50%;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    height: 60px; 
+   
+
+}
+
+.logo h1 {
+    color: burlywood; 
+    font-style: italic;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: burlywood; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Hero Section - Fullscreen Fix */
+.hero {
+    background-image: url('./ex.jpg'); 
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Centering text properly */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+.cta-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+
+.login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+.login-section label {
+    display: block; /* Makes it take full width */
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333; /* Dark grey for better visibility */
+    font-size: 14px;
+}
+
+.login-section input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.login-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.back-button {
+    margin-top: 15px;
+    background-color: #ff4d4d;
+}
+
+
